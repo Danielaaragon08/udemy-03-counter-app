@@ -9,11 +9,8 @@ export const CounterApp = ({ valorInicialContador }) => {
   };
 
   const handleDecrement = () => {
-
     if (contador === 0) return;
-
     setContador(contador - 1);
-    
   };
 
   const handleReset = () => {
@@ -29,13 +26,13 @@ export const CounterApp = ({ valorInicialContador }) => {
           Contador: <strong>{contador}</strong>
         </h2>
         <button className="btn btn-primary" onClick={handleDecrement}>
-          -
+          -1
         </button>
-        <button className="btn btn-primary m-3" onClick={handleReset}>
+        <button  aria-label="btn-reset" className="btn btn-primary m-3" onClick={handleReset}>
           Reset
         </button>
         <button className="btn btn-primary" onClick={handleIncremntClick}>
-          +
+          +1
         </button>
       </div>
     </>

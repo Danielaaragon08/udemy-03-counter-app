@@ -1,14 +1,14 @@
-import { getAllByText, render } from "@testing-library/react";
+import { render } from "@testing-library/react";
 import { FirsApp } from "../FirsApp";
 
 describe("Pruebas en <FirstApp/>", () => {
-  //   test("Debe de hacer match con el snapshot", () => {
-  //     const title = "Curso de React";
-  //     const {container} = render(<FirsApp title={title} />);
+    test("Debe de hacer match con el snapshot", () => {
+      const title = "Curso de React";
+      const {container} = render(<FirsApp title={title} />);
 
-  //     expect(container).toMatchSnapshot();
+      expect(container).toMatchSnapshot();
 
-  //   });
+    });
 
   test("Debe de mostrar el título en un h1", () => {
     const title = "Curso de React";
